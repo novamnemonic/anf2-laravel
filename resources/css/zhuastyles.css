@@ -1,0 +1,182 @@
+.zhua8rem{
+    font-size: 0.8rem;
+}
+
+.grid-container-colors{
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 20% 20% ;
+}
+
+.ejemplo-texto{
+    border: 3px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.ejemplo_seccion{
+    border: 1px solid #6C757D;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 2 / 3 / 3;
+
+}
+
+.color1a{
+    padding: 10px;
+    border-top: 1px solid #6C757D;
+    border-left: 1px solid #6C757D;
+
+}
+
+.color2a{
+    padding: 10px;
+    border-bottom: 1px solid #6C757D;
+    border-left: 1px solid #6C757D;
+
+}
+
+
+
+.grid-container-etiquetas{
+    border-radius: 10px;
+    display: grid;
+    grid-gap : 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto)) ;
+
+}
+
+.grid-container-etiqueta-unica{
+    border: 1px solid #6C757D;
+    background-color: #282C30;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 70% 15% 15% ;
+
+}
+
+.grid-container-etiqueta-unica:hover{
+
+    background-color: #1B1E21;
+
+}
+
+.zhua_tag{
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+}
+
+.zhua_editar_tag{
+    text-align: center;
+}
+
+.zhua_eliminar_tag{
+
+    text-align: right;
+}
+
+.zhua_tag_activo{
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.zhua_tag_inactivo{
+    color: #969799;
+    font-style: italic;
+}
+
+.zhua_hr{
+    border-top: 1px dashed #454D55;
+}
+
+.zhua_etiquetas{
+    border: 1px solid #6C757D;
+    background-color: #282C30;
+    border-radius: 2px;
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 25px;
+}
+
+.ck{
+    color: #000000;
+}
+
+.zhua_contenedor_imagen{
+    position: relative;
+    padding-bottom: 56.25%;;
+}
+
+.zhua_contenedor_imagen img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.zhua_grafica{
+    background-color: #ffffff;
+    /*width: 100%px;*/
+    padding: 20px;
+    margin: 20px;
+    border: 1px dotted #000000;
+
+}
+
+.zhua-texto-negro{
+    color: #000000;
+}
+
+
+.grid-container-charts{
+    border-radius: 10px;
+    display: grid;
+    grid-gap : 5px;
+    /*grid-template-columns: repeat(auto-fit, minmax(250px,auto)) ;*/
+    grid-template-columns: 50% 50% ;
+}
+
+
+/*
+estilos para el recorte de imagenes
+*/
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.preview {
+    text-align: center;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border: 1px solid red;
+}
+input{
+    margin-top:40px;
+}
+.section{
+    margin-top:0px;
+    padding:0px 0px;
+}
+.modal-lg{
+    max-width: 1000px !important;
+}
+
+/*
+    fin de estilos para el recorte de imagenes
+*/
