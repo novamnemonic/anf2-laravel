@@ -1,12 +1,7 @@
-<script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
 <script src="{{asset('vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js')}}"></script>
 <script src="{{asset('vendor/jqueryui-1-13-2/jquery-ui.min.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.js"></script>
-
-
-
     <script>
-
         const $activoCheckbox = document.querySelector("#activo");
         $activoCheckbox.checked = true;
         $(document).ready( function() {
@@ -50,7 +45,6 @@
                 return false;
             }
         });
-
         function tagsbox(id_word,label_word){
             var check_id ="<input class=\"form-check-input\" type=\"checkbox\" name=\"etiquetas[]\" value=\""+id_word+"\" id=\""+id_word+"\" checked>";
             var check_label = "<label class=\"form-check-label\" for=\""+label_word+"\">"+label_word+"</label><br>";
@@ -60,23 +54,7 @@
             $('#lista_etiquetas').focus();
         }
     </script>
-    <script>
-        ClassicEditor
-            .create( document.querySelector( '#resumen' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-        ClassicEditor
-            .create( document.querySelector( '#resumen2' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-        ClassicEditor
-            .create( document.querySelector( '#contenido_html' ) )
-            .catch( error => {
-                console.error( error );
-            });
-    </script>
+
     <script>
         let $inputFile = document.getElementById('archivo_original_ruta');
         let $miDivName = document.getElementById('archivo_subido') //debajo del $miBoton
@@ -87,8 +65,78 @@
         })*/
     </script>
 
+    <script>
+        //evitamos mandar el formulario con la tecla enter
 
-<script>
+        //**** titulo
+        const $titulo_form = document.querySelector("#titulo");
+        // Escuchamos el keydown y prevenimos el evento
+        $titulo_form.addEventListener("keydown", (evento) => {
+	        if (evento.key == "Enter") {
+		        // Prevenir
+		        evento.preventDefault();
+		        return false;
+	        }
+        });
+
+        //**** titulo-corto
+        const $titulo_corto_form = document.querySelector("#titulo_corto");
+        // Escuchamos el keydown y prevenimos el evento
+        $titulo_corto_form.addEventListener("keydown", (evento) => {
+	        if (evento.key == "Enter") {
+		        // Prevenir
+		        evento.preventDefault();
+		        return false;
+	        }
+        });
+
+        //**** lista_etiquetas
+         const $lista_etiquetas_form = document.querySelector("#lista_etiquetas");
+        // Escuchamos el keydown y prevenimos el evento
+        $lista_etiquetas_form.addEventListener("keydown", (evento) => {
+	        if (evento.key == "Enter") {
+		        // Prevenir
+		        evento.preventDefault();
+		        return false;
+	        }
+        });
+
+        //**** fecha_publicacion
+         const $fecha_publicacion_form = document.querySelector("#fecha_publicacion");
+        // Escuchamos el keydown y prevenimos el evento
+        $fecha_publicacion_form.addEventListener("keydown", (evento) => {
+	        if (evento.key == "Enter") {
+		        // Prevenir
+		        evento.preventDefault();
+		        return false;
+	        }
+        });
+
+        //**** pie
+         const $pie_form = document.querySelector("#pie");
+        // Escuchamos el keydown y prevenimos el evento
+        $pie_form.addEventListener("keydown", (evento) => {
+	        if (evento.key == "Enter") {
+		        // Prevenir
+		        evento.preventDefault();
+		        return false;
+	        }
+        });
+
+        //**** peso
+         const $peso_form = document.querySelector("#peso");
+        // Escuchamos el keydown y prevenimos el evento
+        $peso_form.addEventListener("keydown", (evento) => {
+	        if (evento.key == "Enter") {
+		        // Prevenir
+		        evento.preventDefault();
+		        return false;
+	        }
+        });
+
+
+    </script>
+    <script>
         var $modal = $('#modal');
         var image = document.getElementById('image');
         var cropper;
@@ -118,7 +166,6 @@
                 }
             }
         });
-
         $modal.on('shown.bs.modal', function () {
             cropper = new Cropper(image, {
                 aspectRatio: 16 / 9,
@@ -154,7 +201,3 @@
             },'image/jpeg');
         });
     </script>
-
-
-
-

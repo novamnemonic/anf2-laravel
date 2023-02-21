@@ -18,6 +18,7 @@ class EtiquetasIndex extends Component
     {
         $etiquetas = news_etiquetas::query()
                 ->where('etiqueta','LIKE', '%' . $this->search . '%')
+                ->orderBy('etiqueta', 'asc')
                 ->Paginate(50);
         return view('livewire.admin.etiquetas-index',compact('etiquetas'));
     }

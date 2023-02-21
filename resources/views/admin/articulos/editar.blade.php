@@ -27,4 +27,5 @@
 
 @section('js')
     @include('admin.articulos.partials.script')
+    @include('admin.articulos.partials.ckeditors')
 @stop

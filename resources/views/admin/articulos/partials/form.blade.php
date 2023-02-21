@@ -1,12 +1,8 @@
 
-<div class="form-group">
-    {!! Form::label('especial', 'Artículo especial') !!}&nbsp;
-    {!! Form::checkbox('especial') !!}
-</div>
+
 {!! Form::hidden('cre_user_id', auth()->user()->id) !!}
 {!! Form::hidden('uip', auth()->user()->ip) !!}
-<hr class="zhua_hr">
-
+{!! Form::hidden('especial', 0) !!}
 <div class="form-group">
     {!! Form::label('titulo', 'Título') !!}
     {!! Form::text('titulo', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el titulo del Artículo']) !!}

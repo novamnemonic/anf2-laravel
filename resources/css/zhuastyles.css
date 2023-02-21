@@ -180,3 +180,9 @@ input{
 /*
     fin de estilos para el recorte de imagenes
 */
+
+/*  estilo para el ck editor  */
+.ck-editor__editable {
+    height:200px;
+     max-height: 400px;
+}

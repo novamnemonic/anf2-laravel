@@ -21,6 +21,7 @@ class SeccionesIndex extends Component
                 ->where('nombre','LIKE', '%' . $this->search . '%')
                 ->orWhere('nombre_corto','LIKE', '%' . $this->search . '%')
                 ->orWhere('padre','LIKE', '%' . $this->search . '%')
+                ->orderBy('nombre', 'asc')
                 ->Paginate();
 
         return view('livewire.admin.secciones-index', compact('secciones'));

@@ -7,12 +7,7 @@
 
 @section('content')
 
-
-
 @livewire('admin.articulos-index')
-
-
-
 
 @stop
 
@@ -22,9 +17,6 @@
 @stop
 
 @section('js')
-
-
-
     @if (session('info') == 'El articulo se eliminó con éxito')
         <script>
             Swal.fire(
@@ -34,7 +26,6 @@
             )
         </script>
     @endif
-
     <script>
         $('.formulario-eliminar').submit(function(e){
             e.preventDefault();
